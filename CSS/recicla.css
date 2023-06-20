@@ -1,3 +1,43 @@
-div{
+/*div{
     opacity: 0.7;
-}
+}*/
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+  }
+  label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+  button {
+    margin-top: 10px;
+  }
+  #dicas-list {
+    margin-top: 20px;
+    padding-left: 0;
+  }
+
+  .dica h3 {
+    margin-top: 0;
+  }
+/* Estilos para as cores dos materiais */
+.papel {
+    color: blue;
+  }
+  
+  .plastico {
+    color: red;
+  }
+  
+  .vidro {
+    color: green;
+  }
+  
+  .metal {
+    color: yellow;
+  }
+  
+  .organico {
+    color: brown;
+  }

@@ -9,6 +9,24 @@
     <title>Reciclagem</title>
 </head>
 <body>
-    <div><img src="img/825e28a2-ed08-4664-bdb1-1cd161f8274d_rw_1920.jpg" alt=""></div>
+    <div class="container">
+        <h1>Cadastro de Dicas de Reciclagem</h1>
+        <label for="material">Material:</label>
+        <select id="material">
+          <option value="plastico">Plástico</option>
+          <option value="metal">Metal</option>
+          <option value="papel">Papel</option>
+          <option value="vidro">Vidro</option>
+          <option value="organico">Orgânico</option>
+        </select>
+        <label for="dica">Dica:</label>
+        <textarea id="dica" rows="4"></textarea>
+        <button onclick="adicionarDica()">Adicionar Dica</button>
+        <button id="excluir-por-material-btn" onclick="excluirPorMaterial()">Excluir por Material</button>
+        <button id="filtrar-por-material-btn" onclick="filtrarPorMaterial()">Filtrar por Material</button>
+        <h2>Lista de Dicas Cadastradas</h2>
+        <ul id="dicas-list"></ul>
+      </div>
+    
 </body>
 </html>
