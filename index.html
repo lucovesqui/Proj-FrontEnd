@@ -5,29 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/recicla.css" media="screen" />
-    <script type="text/javascript" src="recicla.js"></script>
     <title>Reciclagem</title>
 </head>
 <body>
-  <BODY background="img/825e28a2-ed08-4664-bdb1-1cd161f8274d_rw_1920.jpg">
+  <body background="img/825e28a2-ed08-4664-bdb1-1cd161f8274d_rw_1920.jpg">
+    <header><img src="img/icone.png" alt="icone"></header>
+   
     <div class="container">
-        <h1>Cadastro Dicas da Reciclagem</h1>
+        <h1>Cadastro Dicas de Reciclagem</h1>
+        
         <label for="material">Material:</label>
         <select id="material">
-          <option value="plastico">Plástico</option>
-          <option value="metal">Metal</option>
-          <option value="papel">Papel</option>
-          <option value="vidro">Vidro</option>
-          <option value="organico">Orgânico</option>
+          <option value="Plastico">Plástico</option>
+          <option value="Metal">Metal</option>
+          <option value="Papel">Papel</option>
+          <option value="Vidro">Vidro</option>
+          <option value="Organico">Orgânico</option>
         </select>
         <label for="dica">Dica:</label>
         <textarea id="dica" rows="4"></textarea>
         <button onclick="adicionarDica()">Adicionar Dica</button>
-        <button id="excluir-por-material-btn" onclick="excluirPorMaterial()">Excluir por Material</button>
         <button id="filtrar-por-material-btn" onclick="filtrarPorMaterial()">Filtrar por Material</button>
-        <h2>Dicas Já Cadastradas!!</h2>
+        <h2>Dicas Já Cadastradas:</h2>
         <ul id="dicas-list"></ul>
       </div>
-    
+
+     <button id="BtnColeta" onclick="mostrarDiasColeta()">Coleta de Resíduos</button>
+      <div id="CaixaDias">
+        <ul id="coleta-residuos" class="coleta-residuos">
+          <h3>A partir das 7:00 Hr<br>Coleta de Resíduos comuns</h3>
+          <li><strong>Bairros: Ayrton Senna, Fortunato Sibin, Primavera, Vale Verde, Vila Mariana</strong><strong><br>Dias de coleta:</strong> Segunda-feira, Quarta-Feira e Sexta-Feira</li><br>
+          <li><strong>Bairros: Alvorada, São Pedro, Varotto, Bela Vista, Panorama</strong><strong><br>Dias de coleta:</strong>Terça-Feira, Quinta-Feira e Sábado</li><br>
+          <li><strong>Bairros: Parque Industrial, Distrito Administrativo: Congonhas</strong><strong><br>Dias de coleta:</strong>Terça-Feira e Sexta-Feira</li><br>
+  
+          <h3>A partir das 7:30 Hr<br>Coleta de Recicláveis</h3>
+          <li><strong>Bairros: Henrique Victorelli, Vitor Dantas, João Rocha, Bela Vista, Panorama</strong><strong><br>Dia de coleta:</strong> Segunda-feira</li><br>
+          <li><strong>Bairros: Rosário Pitelli, Europa, Porto Bello, América, Santa Terezinha</strong><strong><br>Dia de coleta:</strong> Terça-feira</li><br>
+          <li><strong>Bairros: Vitória Régia, Morumbi, São Silvestre, VI Henriques, Vl. Ipiranga</strong><strong><br>Dia de coleta:</strong> Quarta-feira</li><br>
+          <li><strong>Bairros: União, Sebastião Cunha, Mutirão, Independência, José Tiburcio</strong><strong><br>Dia de coleta:</strong> Quinta-feira</li><br>
+          <li><strong>Bairros: Bandeirantes, Alvorada, Figueira, Vl. Recreio, Vl. São Pedro</strong><strong><br>Dia de coleta:</strong> Sexta-feira</li><br>
+          <li><strong>Bairros: Câmpus Universitários, Nova Esperança, Jd. Primavera, Vale Verde, Marta Dequesh</strong><strong><br>Dia de coleta:</strong> Sábado</li><br>
+        
+        </ul>
+      </div>
+
+      <script type="text/javascript" src="recicla.js"></script>
 </body>
 </html>

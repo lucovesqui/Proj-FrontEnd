@@ -1,56 +1,117 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+#container{
+  position: relative;
+}
 
-.container {
-    width: 400px;
-    margin: 0 auto;
-  }
+ header{
+  height: 80px;
+  background-color: black;
+  padding: 10px ;
+ }
+
+ img{
+  height: 60px;
+  margin-left: 900px;
+  transition: 4.5s;
+ }
+
+ img:hover{
+  transform: rotate3d(0, 1, 0, 360deg);
+ }
+
   label, input, textarea {
     display: block;
     margin-bottom: 10px;
+    margin-left: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    
   }
+
+  #material{
+    margin-left: 100px ;
+  }
+
   button {
     margin-top: 10px;
+    margin-left: 100px;
+    background-color: lightgreen;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px 5px;
   }
   #dicas-list {
     margin-top: 20px;
     padding-left: 0;
+    margin-left: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
   h1 {
     color: rgb(232, 238, 232);
+    margin-left: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
   label {
     color: rgb(232, 238, 232);
     margin-top: 3%;
+    
   }
 
   h2 {
   color: rgb(232, 238, 232);
+  margin-left: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 10px;
 
 }
 
-
   .dica h3 {
     margin-top: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
 /* Estilos para as cores dos materiais */
-.papel {
+.Papel {
     color: blue;
   }
   
-  .plastico {
+  .Plastico {
     color: red;
   }
   
-  .vidro {
+  .Vidro {
     color: green;
   }
   
-  .metal {
+  .Metal {
     color: yellow;
   }
   
-  .organico {
+  .Organico {
     color: brown;
+  }
+
+  #BtnColeta{
+    background-color: lightgreen;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 1200px; 
+    padding: 10px 10px;
+    display: block;
+    margin-top: -450px;
+  }
+
+  #CaixaDias{
+    margin-left: 1200px;
+  }
+
+  #coleta-residuos{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
